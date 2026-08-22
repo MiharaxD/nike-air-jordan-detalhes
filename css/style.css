@@ -231,6 +231,12 @@ header {
                 top: 0;
                 left: 2550px;
             }
+
+            .msg:nth-child(5) {
+                position: absolute;
+                top: 0;
+                left: 3400px;
+            }
         }
     }
 
@@ -262,6 +268,169 @@ header {
         }
     }
 }
+
+@keyframes rolarTexto {
+    0% {
+        transform: translateX(0%);
+    }
+
+    7.5% {
+        transform: translateX(0%);
+    }
+
+    12.5% {
+        transform: translateX(-100%);
+    }
+
+    32.5% {
+        transform: translateX(-100%);
+    }
+
+    37.5% {
+        transform: translateX(-200%);
+    }
+
+    57.5% {
+        transform: translateX(-200%);
+    }
+
+    62.5% {
+        transform: translateX(-300%);
+    }
+
+    82.5% {
+        transform: translateX(-300%);
+    }
+
+    87.5% {
+        transform: translateX(-400%);
+    }
+
+    99.99% {
+        transform: translateX(-400%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+main {
+    width: 100%;
+    padding: 16px 0;
+
+    .produto {
+        width: 1280px;
+        margin: 0 auto;
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(2, 632px);
+        gap: 16px;
+
+        .fotos {
+            grid-column: 1;
+            grid-row: span 2;
+
+            .grande {
+                width: 632px;
+                height: 632px;
+                overflow: hidden;
+
+
+                img {
+                    width: 100%;
+                    display: block;
+                    transition: 300ms ease all;
+                }
+
+                &:hover img {
+                    transform: scale(1.1) rotate(1deg);
+                }
+            }
+
+            .miniaturas {
+                width: 100%;
+                display: flex;
+                gap: 8px;
+
+                .mini {
+                    width: 72px;
+                    height: 72px;
+
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .desc {
+            grid-column: 2;
+            grid-row: 1;
+            padding: 1rem 0;
+            gap: 1rem;
+
+            h1 {
+                font-weight: 500;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .classificacao {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+
+                i {
+                    font-size: 20px;
+                }
+
+                .nota {
+                    border: 1px solid var(--dark-gray);
+                    padding: 4px;
+                    border-radius: 4px;
+                    color: var(--dark-gray);
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            .preco {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                h2 {
+                    font-weight: bold;
+                    margin-top: 16px;
+                }
+
+                p {
+                    font-size: 14px;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .detalhes {
+            grid-column: 2;
+            grid-row: 2;
+
+            .cores {
+                display: flex;
+            }
+        }
+    }
+}
+
 
 footer {
     display: flex;
@@ -304,6 +473,15 @@ footer {
                     font-size: 13px;
                 }
             }
+
+            .iconesFooter {
+                display: flex;
+
+                i {
+                    font-size: 26px;
+                    padding: 0 10px 0 0;
+                }
+            }
         }
     }
 
@@ -328,40 +506,3 @@ footer {
         }
     }
 }
-
-@keyframes rolarTexto {
-    0% {
-        transform: translateX(0);
-    }
-
-    20% {
-        transform: translateX(0);
-    }
-
-    25% {
-        transform: translateX(-100%);
-    }
-
-    45% {
-        transform: translateX(-100%);
-    }
-
-    50% {
-        transform: translateX(-200%);
-    }
-
-    70% {
-        transform: translateX(-200%);
-    }
-
-    75% {
-        transform: translateX(-300%);
-    }
-
-    99% {
-        transform: translateX(-300%);
-    }
-
-    100% {
-        transform: translateX(0%);
-    }
