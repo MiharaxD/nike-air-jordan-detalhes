@@ -661,6 +661,7 @@ footer {
                 i {
                     font-size: 26px;
                     padding: 0 10px 0 0;
+                    cursor: pointer;
                 }
             }
         }
