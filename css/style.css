@@ -122,8 +122,6 @@ header {
         justify-content: space-between;
         padding: 0 40px;
 
-        .logo {}
-
         .menuitens {
             display: flex;
             align-items: center;
