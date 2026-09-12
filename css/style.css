@@ -689,3 +689,62 @@ footer {
         }
     }
 }
+
+@media(max-width: 1024px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {}
+
+@media(max-width: 425px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+
+        .top {
+            height: 1200px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            ul {
+                width: 296px;
+                height: 251px;
+                display: flex;
+                flex-direction: column;
+                gap: .25rem;
+
+                .iconesFooter {
+                    i {
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: fit-content;
+            justify-content: center;
+            align-items: start;
+            gap: 1rem;
+            padding: 1.5rem;
+
+            ul {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+    }
+}
