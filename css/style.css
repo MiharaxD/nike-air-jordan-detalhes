@@ -811,7 +811,7 @@ footer {
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 820px) {
     header .bottombar {
         .msgs {
             width: 80%;
