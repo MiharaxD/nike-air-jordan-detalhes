@@ -180,7 +180,7 @@ header {
             }
 
             label[for="menuBurger"] {
-                display: flex;
+                display: none;
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
@@ -812,6 +812,12 @@ footer {
 }
 
 @media(max-width: 820px) {
+    header .menu .icones {
+        label[for="menuBurger"] {
+            display: flex;
+        }
+    }
+
     header .bottombar {
         .msgs {
             width: 80%;
