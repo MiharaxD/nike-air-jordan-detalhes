@@ -976,3 +976,66 @@ footer {
         }
     }
 }
+
+@media(max-width: 425px) {
+    main .produto {
+        .detalhes {
+            grid-column: 1 / -1;
+            grid-row: 3;
+
+            .cores {
+                display: flex;
+                flex-direction: row;
+
+                .cor {
+                    width: 30%;
+                    height: auto;
+                    aspect-ratio: 1;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .desc {
+            .classificacao {
+                display: grid;
+                grid-template-columns: auto minmax(0, 1fr);
+
+                .estrelas {
+                    grid-column: 1 / -1;
+                }
+
+                .nota {
+                    grid-column: 1;
+                    grid-row: 2;
+                    justify-self: start;
+                }
+
+                p {
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+            }
+        }
+    }
+    footer{
+        height: fit-content;
+        .top{
+            flex-direction: column;
+            height: fit-content;
+        }
+          .bottom{
+            padding: 1rem;
+                flex-direction: column;
+                height: 6rem;
+                width: 100%;
+                ul{
+                    gap: 2rem;
+                }
+            }
+    }
+}
